@@ -27,3 +27,9 @@ llm -c "<answer to question from llm>"
 ```bash
 llm -t gh:david-jarman/planning-tdd -c
 ```
+
+### Non-TDD
+
+```bash
+llm -t gh:david-jarman/planning -c
+```
