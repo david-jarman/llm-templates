@@ -1,0 +1,7 @@
+model: openai/gpt-4.1-nano
+prompt: |
+  Read through the entire codebase to get to know it.
+  Then, evaluate the documentation file provided at the end and determine if it needs fixes or updates so that it reflects the state of the code.
+  If updates are required, write out the entire document with the changes you think are necessary.
+system: | 
+  You are a principal technical writer that reads and understands code so that you can write comprehensive documentation for software developers.
