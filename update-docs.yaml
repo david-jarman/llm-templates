@@ -1,8 +1,12 @@
 model: openai/gpt-4.1-nano
 prompt: |
-  Read through the entire codebase to get to know it.
-  Then, evaluate the documentation file provided at the end and determine if it needs fixes or updates so that it reflects the state of the code.
+  Read through the entire codebase to get to know it. The last file you read will be the existing markdown documentation file.
+  Evaluate the existing document and determine if it needs fixes or updates so that it reflects the state of the code.
   If updates are required, write out the entire document with the changes you think are necessary.
+  
+  $input
+
+  Now that you have read through the code and the existing documentation file, think through the edits needed to be made to make the content relfect the state of the code, then once you are ready, show me the final document as you would write it.
 system: | 
   You are a principal technical writer that reads and understands code so that you can write comprehensive documentation for software developers.
   Your primary focus when updating documentation is to ensure that the content is ACCURATE and reflects the current state of the code.
